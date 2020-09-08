@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Lucas' personal portfolio for a College assignment" />
+		<meta name="keywords" content="portfolio, personal page, college" />
+		<meta name="author" content="Lucas Rafael" />
+
+		<link rel="stylesheet" type="text/css" href="../assets/css/projects.css" />
+		<link rel="shortcut icon" type="image/png" href="../assets/img/website_icon.png" />
+
+		<script src="https://kit.fontawesome.com/66aff21467.js" crossorigin="anonymous"></script>
+		<script src="../assets/js/functionalities.js"></script>
+		
+		<title>Lucas Rafael | Projects</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Lucas Rafael</h1>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="../index_en.html" accesskey="h"> <span class="fas fa-home"></span> HOME <strong class="shortcut">[H]</strong></a>
+					</li>
+
+					<li>
+						<a href="about_me_en.html" accesskey="a"> <span class="fas fa-question-circle"></span> ABOUT ME <strong class="shortcut">[A]</strong></a>
+					</li>
+
+					<li>
+						<a href="projects_en" class="current" accesskey="s"> <span class="fas fa-clipboard"></span> PROJECTS <strong class="shortcut">[S]</strong></a>
+					</li>
+
+					<li>
+						<a href="../assets/files/Lucas Rafael de Oliveira Longuini - Currículo.pdf" accesskey="r"> <span class="fas fa-paperclip"></span> RESUME (PT-BR) <strong class="shortcut">[R]</strong></a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropbtn"> <span class="fas fa-globe"></span> LANGUAGE <strong class="shortcut">[L]</strong>: <img src="../assets/img/en-US.png" alt="American Flag" width="20" /> EN-US</a>
+
+						<div class="dropdownContent">
+							<a href="projects_pt.html" accesskey="l">
+								<img src="../assets/img/pt-BR.png" alt="Brazilian Flag" width="20" />
+								PT-BR
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="javascript:void(0);" id="mobileNav" class="fas fa-bars" onclick="openNav();"></a>
+		</header>
+
+		<!-- Mobile Nav Bar -->
+		<div id="mobileNavLinks">
+			<a href="../index_en.html"> <span class="fas fa-home"></span> HOME</a>
+			<a href="about_me_en.html"> <span class="fas fa-question-circle"></span> ABOUT ME</a>
+			<a href="projects_en.html" class="current"> <span class="fas fa-clipboard"></span> PROJECTS</a>
+			<a href="../assets/files/Lucas Rafael de Oliveira Longuini - Currículo.pdf"> <span class="fas fa-paperclip"></span> RESUME (PT-BR)</a>
+		</div>
+		
+
+		<!--================================
+			SHOWCASE
+		=================================-->
+		<section id="showcase">
+			<div class="container">
+				<div class="box">
+					<h2>Undergraduate Thesis - Time and Attendance System</h2>
+					<hr/>
+					<img src="../assets/img/tna_system.png" />
+
+					<p>
+						The Time and Attendance System was developed as a requirement for. 
+
+						The goal of this project was to develop a time and attendance system for teachers and employees,
+						hoping to fix errors and replace the obsolete system.
+
+						O Sistema de Controle de Ponto foi desenvolvido como exigência para conclusão de graduação do
+						curso de Sistemas para Internet da FATEC Jahu.
+
+						<br/><br/>
+						<a href="../assets/files/TCC - Sistema para Controle de Ponto.pdf"><span class="fas fa-paperclip"></span> READ COMPLETE THESIS (PDF - PORTUGUESE ONLY)</a>
+					</p>
+				</div>
+
+				<div class="box">
+					<h2>Tic-tac-toe in JavaScript</h2>
+					<hr/>
+					<img src="../assets/img/tic-tac-toe_en.png" />
+
+					<p>
+						This small project was developed in class as a JavaScript programming exercise, using the acquired
+						knowledge about functions and arrays.
+
+						<br/><br/>
+						<a href="../assets/files/tic-tac-toe_en.html"><span class="fas fa-dice"></span> VIEW PROJECT</a>
+					</p>
+				</div>
+
+				<div class="box">
+					<h2>Garry's Mod Workshop</h2>
+					<hr/>
+					<img src="../assets/img/gmodlogo.jpg" />
+
+					<p>
+						This workshop is a collection of <em>addons</em> that I've developed between 2015 and 2017
+						for the game <a href="https://store.steampowered.com/app/4000/Garrys_Mod/">Garry's Mod</a>,
+						using the <a href="https://www.lua.org/">Lua</a> programming language.
+
+						<br/><br/>
+						<a href="https://steamcommunity.com/id/rambotnic09/myworkshopfiles/"> <span class="fas fa-gamepad"></span> VIEW WORKSHOP</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<p>GitHub.io | Lucas Rafael - Copyright &copy; 2017 - <span id="currentYear"></span></p>
+		</footer>
+	</body>
+</html>
