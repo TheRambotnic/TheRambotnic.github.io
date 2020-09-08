@@ -1,0 +1,69 @@
+/*=====================================
+	WEB FONTS
+=====================================*/
+/* Raleway Thin */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+/* Cinzel */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+
+
+@import url("global_header_footer.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+
+/*=====================================
+	Showcase Styling
+=====================================*/
+#showcase {
+	background-image: url("../img/question-marks.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+	padding: 95px 30px 30px 30px;
+	display: flex;
+	justify-content: space-between;
+	color: #FFF;
+}
+
+#showcase aside {
+	background-color: #444;
+	width: 100%;
+	padding: 20px;
+	margin-right: 10px;
+	border-radius: 3px;
+	border: 1px #FFF solid;
+	text-align: center;
+}
+
+#showcase aside img {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 1px #FFF solid;]
+}
+
+#showcase aside hr {
+	margin: 20px 0; 
+}
+
+#showcase article {
+	background-color: #444;
+	padding: 20px;
+	margin-left: 10px;
+	border-radius: 3px;
+	border: 1px #FFF solid;
+	text-align: justify;
+}

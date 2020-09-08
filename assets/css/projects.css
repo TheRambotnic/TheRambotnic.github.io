@@ -1,0 +1,79 @@
+/*=====================================
+	WEB FONTS
+=====================================*/
+/* Raleway Thin */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+/* Cinzel */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+
+
+@import url("global_header_footer.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#showcase {
+	background-image: url("../img/projects.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+	color: #FFF;
+	padding: 100px 0 40px 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+	background-color: #444;
+	width: 85%;
+	margin: 15px auto;
+	padding: 20px;
+	border-radius: 5px;
+	border: 2px #F90 solid;
+	text-align: justify;
+}
+
+.box img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.box hr {
+	margin: 12px 0;
+}
+
+.box a {
+	color: #F90;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.box a:hover {
+	color: #DDD;
+}
+
+
+/*=====================================
+
+	MEDIA QUERIES
+
+=====================================*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

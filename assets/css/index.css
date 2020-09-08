@@ -1,0 +1,175 @@
+/*=====================================
+	WEB FONTS
+=====================================*/
+/* Raleway Thin */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+/* Cinzel */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+
+
+@import url("global_header_footer.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+
+/*=====================================
+	Showcase Styling
+=====================================*/
+#showcase {
+	/*min-height: 70%;*/
+	background-image: url("../img/workspace_darker.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #FFF;
+	/*padding-top: 60px;*/
+	padding: 180px 0 120px 0;
+}
+
+#showcase h2 {
+	font-size: 3em;
+	font-family: "Cinzel", serif;
+}
+
+#showcase p {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#showcase h2,
+#showcase p {
+	margin: 0 5%;
+}
+
+
+/*=====================================
+	WebTech Container Styling
+=====================================*/
+.container {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.container h1 {
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+}
+
+.container h2 {
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.container p, h3 {
+	text-align: center;
+}
+
+#websiteTechnologies {
+	background-color: #DDD;
+}
+
+#websiteTechnologies h2 {
+	text-align: center;
+	padding: 15px;
+}
+
+.box {
+	text-align: center;
+	margin: 25px;
+}
+
+.box img {
+	padding-bottom: 1em;
+}
+
+.box hr {
+	margin: 10px 0;
+}
+
+
+/*=====================================
+	Separator Styling
+=====================================*/
+#separator {
+	padding: 1.5em 0;
+	background-color: #444;
+}
+
+#separator form .goTo {
+	display: block;
+	margin: 0 auto;
+	background-color: #F50;
+	color: #FFF;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-weight: bold;
+	height: 3em;
+}
+
+#separator form .goTo::before,
+#separator form .goTo::after {
+	content: " ▼ ";
+}
+
+#separator form .goTo:hover {
+	cursor: pointer;
+	border-style: groove;
+	background-color: #D30;
+}
+
+
+/*=====================================
+
+	MEDIA QUERIES
+
+=====================================*/
+@media screen and (orientation: portrait), (max-width: 768px) {
+	/*
+		Make container's items stack on top of
+		eachother when viewing in a mobile device
+	*/
+	.container {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container img {
+		width: 50%;
+	}
+
+	#showcase {
+		padding: 100px 0 60px 0;
+	}
+
+	#showcase h2 {
+		font-size: 2em;
+	}
+
+	#showcase p {
+		font-size: 1em;
+	}
+}

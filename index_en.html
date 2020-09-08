@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Lucas' personal portfolio for a College assignment" />
+		<meta name="keywords" content="portfolio, personal page, college" />
+		<meta name="author" content="Lucas Rafael" />
+
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+		<link rel="shortcut icon" type="image/png" href="assets/img/website_icon.png" />
+
+		<script src="https://kit.fontawesome.com/66aff21467.js" crossorigin="anonymous"></script>
+		<script src="assets/js/functionalities.js"></script>
+		
+		<title>Lucas Rafael | Welcome</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Lucas Rafael</h1>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="index_en.html" class="current" accesskey="h"> <span class="fas fa-home"></span> HOME <strong class="shortcut">[H]</strong></a>
+					</li>
+
+					<li>
+						<a href="pages/about_me_en.html" accesskey="a"> <span class="fas fa-question-circle"></span> ABOUT ME <strong class="shortcut">[A]</strong></a>
+					</li>
+
+					<li>
+						<a href="pages/projects_en.html" accesskey="s"> <span class="fas fa-clipboard"></span> PROJECTS <strong class="shortcut">[S]</strong></a>
+					</li>
+
+					<li>
+						<a href="assets/files/Lucas Rafael de Oliveira Longuini - Currículo.pdf" accesskey="r"> <span class="fas fa-paperclip"></span> RESUME (PT-BR) <strong class="shortcut">[R]</strong></a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropbtn"> <span class="fas fa-globe"></span> LANGUAGE <strong class="shortcut">[L]</strong>: <img src="assets/img/en-US.png" alt="American Flag" width="20" /> EN-US</a>
+
+						<div class="dropdownContent">
+							<a href="index.html" accesskey="l">
+								<img src="assets/img/pt-BR.png" alt="Brazilian Flag" width="20" />
+								PT-BR
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="javascript:void(0);" id="mobileNav" class="fas fa-bars" onclick="openNav();"></a>
+		</header>
+
+		<!-- Mobile Nav Bar -->
+		<div id="mobileNavLinks">
+			<a href="index_en.html" class="current"> <span class="fas fa-home"></span> HOME</a>
+			<a href="pages/about_me_en.html"> <span class="fas fa-question-circle"></span> ABOUT ME</a>
+			<a href="pages/projects_en.html"> <span class="fas fa-clipboard"></span> PROJECTS</a>
+			<a href="assets/files/Lucas Rafael de Oliveira Longuini - Currículo.pdf"> <span class="fas fa-paperclip"></span> RESUME (PT-BR)</a>
+		</div>
+		
+
+		<!--================================
+			SHOWCASE
+		=================================-->
+		<section id="showcase">
+			<div>
+				<h2>WELCOME TO MY PERSONAL PORTFOLIO!</h2>
+				<br/>
+				<p>
+					Here you will find projects that I've developed in college, or in my spare time.
+					As well as a little bit of information about who I am.
+				</p>
+			</div>
+		</section>
+
+
+		<section id="separator">
+			<form>
+				<button type="submit" class="goTo" formaction="#websiteTechnologies">CLICK HERE OR SCROLL DOWN</button>
+			</form>
+		</section>
+
+
+		<!--================================
+			WEBSITE TECHNOLOGIES
+		=================================-->
+		<section id="websiteTechnologies">
+			<h2>This website uses the following technologies:</h2>
+			<div class="container">
+				<div class="box">
+					<img src="assets/img/logo_html.png" alt="HTML5 Logo" title="HyperText Markup Language - HTML" width="200" />
+					
+					<h3>HTML5 Markup</h3>
+					<hr/>
+					<p>
+						The structure of this page was developed with HTML5, based on the
+						World Wide Web Consortium (W3C) standards. <strong>Press CTRL+U to see
+						the full structure.</strong>
+					</p>
+				</div>
+
+				<div class="box">
+					<img src="assets/img/logo_css.png" alt="CSS3 Logo" title="Cascading Style Sheets - CSS" />
+					
+					<h3>CSS3 Styling</h3>
+					<hr/>
+					<p>
+						The styling of this page was developed with CSS3, based on the
+						World Wide Web Consortium (W3C) semantic standards.
+					</p>
+				</div>
+
+				<div class="box">
+					<img src="assets/img/logo_brush.png" alt="Brush" title="Graphic Design" />
+
+					<h3>Wireframe Concept</h3>
+					<hr/>
+					<p>
+						The visual design of this page was developed with the wireframe concept
+						in mind. Thus, making it so that the graphical fidelity of this site is
+						pleasant to everyone.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<footer>
+			<p>GitHub.io | Lucas Rafael - Copyright &copy; 2017 - <span id="currentYear"></span></p>
+		</footer>
+	</body>
+</html>

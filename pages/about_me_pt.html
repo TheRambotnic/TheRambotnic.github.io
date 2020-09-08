@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Lucas' personal portfolio for a College assignment" />
+		<meta name="keywords" content="portfolio, personal page, college" />
+		<meta name="author" content="Lucas Rafael" />
+
+		<link rel="stylesheet" type="text/css" href="../assets/css/about_me.css" />
+		<link rel="shortcut icon" type="image/png" href="../assets/img/website_icon.png" />
+
+		<script src="https://kit.fontawesome.com/66aff21467.js" crossorigin="anonymous"></script>
+		<script src="../assets/js/functionalities.js"></script>
+		
+		<title>Lucas Rafael | Sobre Mim</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Lucas Rafael</h1>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="../index.html" accesskey="h"> <span class="fas fa-home"></span> INÍCIO <strong class="shortcut">[H]</strong></a>
+					</li>
+
+					<li>
+						<a href="about_me_pt.html" class="current" accesskey="a"> <span class="fas fa-question-circle"></span> SOBRE MIM <strong class="shortcut">[A]</strong></a>
+					</li>
+
+					<li>
+						<a href="projects_pt.html" accesskey="s"> <span class="fas fa-clipboard"></span> PROJETOS <strong class="shortcut">[S]</strong></a>
+					</li>
+
+					<li>
+						<a href="assets/files/Lucas Rafael de Oliveira Longuini - Currículo.pdf" accesskey="r"> <span class="fas fa-paperclip"></span> CURRÍCULO <strong class="shortcut">[R]</strong></a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropbtn"> <span class="fas fa-globe"></span> IDIOMA <strong class="shortcut">[L]</strong>: <img src="../assets/img/pt-BR.png" alt="Bandeira Brasileira" width="20" /> PT-BR</a>
+
+						<div class="dropdownContent">
+							<a href="about_me_en.html" accesskey="l">
+								<img src="../assets/img/en-US.png" alt="Bandeira Americana" width="20" />
+								EN-US
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="javascript:void(0);" id="mobileNav" class="fas fa-bars" onclick="openNav();"></a>
+		</header>
+
+		<!-- Mobile Nav Bar -->
+		<div id="mobileNavLinks">
+			<a href="../index.html"> <span class="fas fa-home"></span> INÍCIO</a>
+			<a href="about_me_pt.html" class="current"> <span class="fas fa-question-circle"></span> SOBRE MIM</a>
+			<a href="projects_pt.html"> <span class="fas fa-clipboard"></span> PROJETOS</a>
+			<a href="assets/files/Lucas Rafael de Oliveira Longuini - Currículo.pdf"> <span class="fas fa-paperclip"></span> CURRÍCULO</a>
+		</div>
+		
+
+		<!--================================
+			SHOWCASE
+		=================================-->
+		<section id="showcase">
+			<aside>
+				<img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/businessman.png" />
+				<hr/>
+				<h3>Lucas Rafael de Oliveira Longuini</h3>
+
+				<br/>
+				<p>
+					<span class="fas fa-envelope"></span> lucasrafaellonguini09@gmail.com
+					<br/>
+					<strong><span class="fas fa-phone"></span></strong> (14) 99814-9936 &nbsp;&nbsp;&nbsp;&nbsp; <strong>Idade: </strong> <span id="age"></span>
+				</p>
+			</aside>
+
+			<article>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
+		</section>
+
+
+		<footer>
+			<p>GitHub.io | Lucas Rafael - Copyright &copy; 2017 - <span id="currentYear"></span></p>
+		</footer>
+	</body>
+</html>
