@@ -46,6 +46,10 @@ body {
 	text-align: justify;
 }
 
+.box h2 {
+	text-align: left;
+}
+
 .box img {
 	width: 100%;
 	margin-bottom: 15px;
