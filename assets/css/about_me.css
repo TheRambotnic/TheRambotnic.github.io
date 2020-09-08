@@ -38,7 +38,7 @@ body {
 }
 
 #showcase aside {
-	background-color: #444;
+	background-color: var(--separator);
 	width: 100%;
 	padding: 20px;
 	margin-right: 10px;
@@ -52,7 +52,7 @@ body {
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;
-	border: 1px #FFF solid;]
+	border: 1px #FFF solid;
 }
 
 #showcase aside hr {
@@ -60,7 +60,7 @@ body {
 }
 
 #showcase article {
-	background-color: #444;
+	background-color: var(--separator);
 	padding: 20px;
 	margin-left: 10px;
 	border-radius: 3px;

@@ -113,13 +113,13 @@ body {
 =====================================*/
 #separator {
 	padding: 1.5em 0;
-	background-color: #444;
+	background-color: var(--separator);
 }
 
 #separator form .goTo {
 	display: block;
 	margin: 0 auto;
-	background-color: #F50;
+	background-color: var(--orangeDark);
 	color: #FFF;
 	border: 2px solid #FFF;
 	border-radius: 5px;

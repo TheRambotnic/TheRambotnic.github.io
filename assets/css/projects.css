@@ -37,12 +37,12 @@ body {
 }
 
 .box {
-	background-color: #444;
+	background-color: var(--separator);
 	width: 85%;
 	margin: 15px auto;
 	padding: 20px;
 	border-radius: 5px;
-	border: 2px #F90 solid;
+	border: 2px var(--orangeLight) solid;
 	text-align: justify;
 }
 
@@ -56,14 +56,14 @@ body {
 }
 
 .box a {
-	color: #F90;
+	color: var(--orangeLight);
 	font-weight: bold;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
 .box a:hover {
-	color: #DDD;
+	color: var(--linkHover);
 }
 
 
