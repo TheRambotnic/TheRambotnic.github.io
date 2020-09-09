@@ -20,8 +20,16 @@ window.onload = function() {
 =======================================*/
 function openNav() {
 	var links = document.querySelector("#mobileNavLinks");
-	if (links.style.display === "block")
+	var hamburger = document.querySelector("#mobileNav");
+
+	if (links.style.display === "block" && hamburger.classList.contains("fa-times")) {
 		links.style.display = "none";
-	else
+		hamburger.classList.remove("fa-times");
+		hamburger.classList.add("fa-bars");
+	}
+	else {
 		links.style.display = "block";
+		hamburger.classList.remove("fa-bars");
+		hamburger.classList.add("fa-times");
+	}
 }
