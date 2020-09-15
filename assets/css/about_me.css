@@ -43,7 +43,7 @@ body {
 }
 
 #showcase .profile img {
-	width: 40%;
+	width: 50%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;
@@ -70,6 +70,19 @@ body {
 #showcase .about {
 	grid-column: 2 / span 3;
 	padding: 20px; 
+}
+
+#showcase .about p {
+	text-indent: 16px;
+}
+
+#showcase article a {
+	color: var(--orangeLight);
+	text-decoration: none;
+}
+
+#showcase article a:hover {
+	color: var(--linkHover);
 }
 
 

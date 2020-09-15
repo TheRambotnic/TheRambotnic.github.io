@@ -22,7 +22,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 50px;
+	padding: 10px 45px;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
@@ -35,13 +35,13 @@ header .current {
 
 header li {
 	display: inline-block;
-	padding: 0 15px 0 15px;
+	padding: 0 10px;
 }
 
 header li img {
 	position: relative;
-	top: 0.2em;
-	margin-top: -2em;
+	top: 0.25em;
+	margin-top: -2.5em;
 }
 
 header a {
@@ -72,6 +72,7 @@ header nav .dropdownContent {
 	display: none;
 	position: absolute;
 	z-index: 1;
+	margin-left: 110px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -171,7 +172,7 @@ footer p {
 	.langBtn img,
 	#lang img {
 		position: relative;
-		top: 0.2em;
-		margin-top: -2em;
+		top: 0.25em;
+		margin-top: -2.5em;
 	}
 }
