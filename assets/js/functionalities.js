@@ -33,3 +33,19 @@ function openNav() {
 		hamburger.classList.add("fa-times");
 	}
 }
+
+function langOpen() {
+	var langBtn = document.getElementsByClassName("langBtn")[0];
+	var arrow = document.getElementById("arrow");
+
+	if (langBtn.style.display === "block" && arrow.classList.contains("fa-angle-up")) {
+		langBtn.style.display = "none";
+		arrow.classList.remove("fa-angle-up");
+		arrow.classList.add("fa-angle-down");
+	}
+	else {
+		langBtn.style.display = "block";
+		arrow.classList.remove("fa-angle-down");
+		arrow.classList.add("fa-angle-up");
+	}
+}
