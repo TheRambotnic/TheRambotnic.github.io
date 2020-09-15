@@ -163,4 +163,15 @@ footer p {
 		text-decoration: none;
 		padding: 10px 30px;
 	}
+
+	#mobileNavLinks .langBtn {
+		display: none;
+	}
+
+	.langBtn img,
+	#lang img {
+		position: relative;
+		top: 0.2em;
+		margin-top: -2em;
+	}
 }
