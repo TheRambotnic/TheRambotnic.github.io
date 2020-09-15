@@ -32,38 +32,60 @@ body {
 	background-size: cover;
 	background-position: top;
 	padding: 95px 30px 30px 30px;
-	display: flex;
-	justify-content: space-between;
 	color: #FFF;
+	width: 100%;
 }
 
-#showcase aside {
-	background-color: var(--separator);
-	width: 100%;
+#showcase .profile {
+	border-right: 2px var(--orangeLight) solid;
 	padding: 20px;
-	margin-right: 10px;
-	border-radius: 3px;
-	border: 1px #FFF solid;
 	text-align: center;
 }
 
-#showcase aside img {
-	width: 70%;
+#showcase .profile img {
+	width: 40%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;
 	border: 1px #FFF solid;
 }
 
-#showcase aside hr {
-	margin: 20px 0; 
+#showcase .profile hr {
+	margin: 15px 0;
+}
+
+#showcase .profile p {
+	line-height: 24px;
 }
 
 #showcase article {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	background-color: var(--separator);
-	padding: 20px;
 	margin-left: 10px;
 	border-radius: 3px;
-	border: 1px #FFF solid;
+	border: 2px var(--orangeLight) solid;
 	text-align: justify;
+}
+
+#showcase .about {
+	grid-column: 2 / span 3;
+	padding: 20px; 
+}
+
+
+/*=====================================
+
+	MEDIA QUERIES
+
+=====================================*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	#showcase article {
+		display: block;
+	}
+
+	#showcase .profile {
+		border-right: none;
+		border-bottom: 2px var(--orangeLight) solid;
+	}
 }
