@@ -10,6 +10,8 @@
 				padding: 0;
 				margin: 0;
 				box-sizing: border-box;
+				background-color: #222;
+				color: #FFF;
 			}
 
 			button {
@@ -22,13 +24,14 @@
 			}
 
 			table {
+				font-family: monospace;
 				margin: 0 auto;
 				border-collapse: collapse;
 			}
 
 			table td {
-				border-bottom: 3px #000 solid;
-				border-right: 3px #000 solid;
+				border-bottom: 2px #000 solid;
+				border-right: 2px #000 solid;
 			}
 
 			table td:nth-child(3) {
@@ -47,6 +50,10 @@
 				["+", "+", "+"],
 				["+", "+", "+"]
 			];
+
+			function disableButtons() {
+				document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+			}
 
 			function position(x, y) {
 				if (turn % 2 == 0) {
@@ -72,12 +79,12 @@
 				for (let h = 0; h < positions.length; h++) {
 					if (positions[h][0] == "O" && positions[h][1] == "O" && positions[h][2] == "O") {
 						document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
-						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+						disableButtons();
 					}
 
 					if (positions[h][0] == "X" && positions[h][1] == "X" && positions[h][2] == "X") {
 						document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
-						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+						disableButtons();
 					}
 				}
 
@@ -86,12 +93,12 @@
 				for (let v = 0; v < positions.length; v++) {
 					if (positions[0][v] == "O" && positions[1][v] == "O" && positions[2][v] == "O") {
 						document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
-						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+						disableButtons();
 					}
 
 					if (positions[0][v] == "X" && positions[1][v] == "X" && positions[2][v] == "X") {
 						document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
-						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+						disableButtons();
 					}
 				}
 
@@ -99,22 +106,22 @@
 				// check diagonal
 				if (positions[0][0] == "O" && positions[1][1] == "O" && positions[2][2] == "O") {
 					document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
-					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+					disableButtons();
 				}
 
 				if (positions[0][0] == "X" && positions[1][1] == "X" && positions[2][2] == "X") {
 					document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
-					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+					disableButtons();
 				}
 
 				if (positions[0][2] == "O" && positions[1][1] == "O" && positions[2][0] == "O") {
 					document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
-					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+					disableButtons();
 				}
 
 				if (positions[0][2] == "X" && positions[1][1] == "X" && positions[2][0] == "X") {
 					document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
-					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+					disableButtons();
 				}
 
 
