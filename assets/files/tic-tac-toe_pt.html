@@ -69,13 +69,13 @@
 
 
 				// check horizontal
-				for (let i = 0; i < positions.length; i++) {
-					if (positions[i][0] == "O" && positions[i][1] == "O" && positions[i][2] == "O") {
+				for (let h = 0; h < positions.length; h++) {
+					if (positions[h][0] == "O" && positions[h][1] == "O" && positions[h][2] == "O") {
 						document.querySelector("#resp").innerHTML = "O JOGADOR 1 VENCEU O JOGO!";
 						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
 
-					if (positions[i][0] == "X" && positions[i][1] == "X" && positions[i][2] == "X") {
+					if (positions[h][0] == "X" && positions[h][1] == "X" && positions[h][2] == "X") {
 						document.querySelector("#resp").innerHTML = "O JOGADOR 2 VENCEU O JOGO!";
 						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
@@ -83,13 +83,13 @@
 
 
 				// check vertical
-				for (let i = 0; i < positions.length; i++) {
-					if (positions[0][i] == "O" && positions[1][i] == "O" && positions[2][i] == "O") {
+				for (let v = 0; v < positions.length; v++) {
+					if (positions[0][v] == "O" && positions[1][v] == "O" && positions[2][v] == "O") {
 						document.querySelector("#resp").innerHTML = "O JOGADOR 1 VENCEU O JOGO!";
 						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
 
-					if (positions[0][i] == "X" && positions[1][i] == "X" && positions[2][i] == "X") {
+					if (positions[0][v] == "X" && positions[1][v] == "X" && positions[2][v] == "X") {
 						document.querySelector("#resp").innerHTML = "O JOGADOR 2 VENCEU O JOGO!";
 						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
