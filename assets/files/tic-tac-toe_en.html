@@ -41,79 +41,86 @@
 		</style>
 
 		<script type="text/javascript">
-			var turn = 0;
-			var positions = [
+			let turn = 0;
+			let positions = [
 				["+", "+", "+"],
 				["+", "+", "+"],
 				["+", "+", "+"]
 			];
 
-			function position(x,y) {
-				if (turn%2 == 0) {
-					document.getElementById(x + "." + y).innerHTML = "O";
-					document.getElementById(x + "." + y).style = "background-color: #FF0000; padding: 3em; font-weight: bold; color: #FFFFFF";
+			function position(x, y) {
+				if (turn % 2 == 0) {
+					document.getElementById(`${x}.${y}`).innerHTML = "O";
+					document.getElementById(`${x}.${y}`).style = "background-color: #FF0000; padding: 3em; font-weight: bold; color: #FFFFFF";
 					positions[x][y] = "O";
 					turn++;
 
 					// disable button on indicated position
-					document.getElementById(x + "." + y).disabled = true;
-				}
-				else {
-					document.getElementById(x + "." + y).innerHTML = "X";
-					document.getElementById(x + "." + y).style = "background-color: #00FF00; padding: 3em; font-weight: bold; color: #000000";
+					document.getElementById(`${x}.${y}`).disabled = true;
+				} else {
+					document.getElementById(`${x}.${y}`).innerHTML = "X";
+					document.getElementById(`${x}.${y}`).style = "background-color: #00FF00; padding: 3em; font-weight: bold; color: #000000";
 					positions[x][y] = "X";
 					turn++;
 
 					// disable button on indicated position
-					document.getElementById(x + "." + y).disabled = true;
+					document.getElementById(`${x}.${y}`).disabled = true;
 				}
 
 
 				// check horizontal
-				for (var i = 0; i < positions.length; i++) {
+				for (let i = 0; i < positions.length; i++) {
 					if (positions[i][0] == "O" && positions[i][1] == "O" && positions[i][2] == "O") {
-						document.getElementById('resp').innerHTML = "PLAYER 1 WON THE GAME!";
+						document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
+						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
 
 					if (positions[i][0] == "X" && positions[i][1] == "X" && positions[i][2] == "X") {
-						document.getElementById('resp').innerHTML = "PLAYER 2 WON THE GAME!";
+						document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
+						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
 				}
 
 
 				// check vertical
-				for (var i = 0; i < positions.length; i++) {
+				for (let i = 0; i < positions.length; i++) {
 					if (positions[0][i] == "O" && positions[1][i] == "O" && positions[2][i] == "O") {
-						document.getElementById('resp').innerHTML = "PLAYER 1 WON THE GAME!";
+						document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
+						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
 
 					if (positions[0][i] == "X" && positions[1][i] == "X" && positions[2][i] == "X") {
-						document.getElementById('resp').innerHTML = "PLAYER 2 WON THE GAME!";
+						document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
+						document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 					}
 				}
 
 
 				// check diagonal
 				if (positions[0][0] == "O" && positions[1][1] == "O" && positions[2][2] == "O") {
-					document.getElementById('resp').innerHTML = "PLAYER 1 WON THE GAME!";
+					document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
+					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 				}
 
 				if (positions[0][0] == "X" && positions[1][1] == "X" && positions[2][2] == "X") {
-					document.getElementById('resp').innerHTML = "PLAYER 2 WON THE GAME!";
+					document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
+					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 				}
 
 				if (positions[0][2] == "O" && positions[1][1] == "O" && positions[2][0] == "O") {
-					document.getElementById('resp').innerHTML = "PLAYER 1 WON THE GAME!";
+					document.querySelector("#resp").innerHTML = "PLAYER 1 WON THE GAME!";
+					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 				}
 
 				if (positions[0][2] == "X" && positions[1][1] == "X" && positions[2][0] == "X") {
-					document.getElementById('resp').innerHTML = "PLAYER 2 WON THE GAME!";
+					document.querySelector("#resp").innerHTML = "PLAYER 2 WON THE GAME!";
+					document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 				}
 
 
 				// check draw
 				if (turn == 9) {
-					document.getElementById('resp').innerHTML = "IT'S A DRAW!";
+					document.querySelector("#resp").innerHTML = "IT'S A DRAW!";
 				}
 			}
 		</script>
